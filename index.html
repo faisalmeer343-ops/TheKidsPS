@@ -2970,7 +2970,7 @@
       currentReportData = text;
     }
     function generateFullReport() {
-      let text = '════════════════════════════════════════════════════════════\n           🏫 The Kid's Paradise School Shaikh Town Kangni wala Gujranwala - COMPLETE STATEMENT\n';
+      let text = '════════════════════════════════════════════════════════════\n           🏫 The Kid's Paradise School Shaikh Town Kangni wala Gujranwala COMPLETE STATEMENT\n';
       text += `           Generated: ${new Date().toLocaleString()}\n════════════════════════════════════════════════════════════\n\n`;
       let totalStudents = students.length, totalCollected=0, totalDue=0, totalPrevious=0;
       students.forEach(s => { if (monthlyData[s.id]) { for (const mk in monthlyData[s.id]) { const d = monthlyData[s.id][mk]; totalCollected += d.paid||0; totalDue += d.balance||0; totalPrevious += d.previous_fee||0; } } });
